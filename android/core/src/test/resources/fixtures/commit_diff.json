@@ -1,0 +1,4 @@
+[
+  {"diff": "@@ -1,3 +1,4 @@\n line one\n-line two\n+line 2\n+line three\n line four\n", "new_path": "src/a.kt", "old_path": "src/a.kt", "a_mode": "100644", "b_mode": "100644", "new_file": false, "renamed_file": false, "deleted_file": false, "generated_file": false},
+  {"diff": "", "new_path": "assets/logo.png", "old_path": "assets/logo.png", "a_mode": "0", "b_mode": "100644", "new_file": true, "renamed_file": false, "deleted_file": false, "too_large": false, "collapsed": false}
+]

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gitlabio</string>
+    <string name="notification_channel_todos">GitLab 待办</string>
+    <string name="notification_channel_todos_description">新的审阅请求、指派和提及</string>
+</resources>

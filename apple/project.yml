@@ -1,0 +1,66 @@
+name: Gitlabio
+options:
+  bundleIdPrefix: io.routeforge
+  deploymentTarget:
+    iOS: '18.0'
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    MARKETING_VERSION: '0.3.0'
+    CURRENT_PROJECT_VERSION: '1'
+    CODE_SIGN_STYLE: Automatic
+packages:
+  GitLabCore:
+    path: GitLabCore
+targets:
+  Gitlabio:
+    type: application
+    platform: iOS
+    sources: [Gitlabio]
+    dependencies:
+      - package: GitLabCore
+    info:
+      path: Gitlabio/Info.plist
+      properties:
+        CFBundleDisplayName: Gitlabio
+        CFBundleDevelopmentRegion: zh-Hans
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        ITSAppUsesNonExemptEncryption: false
+        LSApplicationCategoryType: public.app-category.developer-tools
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UIBackgroundModes: [fetch]
+        BGTaskSchedulerPermittedIdentifiers: [io.routeforge.gitlabio.refresh]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: io.routeforge.gitlabio
+        TARGETED_DEVICE_FAMILY: '1,2'
+        SUPPORTS_MACCATALYST: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_PREVIEWS: YES
+  GitlabioUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [GitlabioUITests]
+    dependencies:
+      - target: Gitlabio
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: io.routeforge.gitlabio.uitests
+        TEST_TARGET_NAME: Gitlabio
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  Gitlabio:
+    build:
+      targets:
+        Gitlabio: all
+    test:
+      targets: [GitlabioUITests]
+    archive:
+      config: Release

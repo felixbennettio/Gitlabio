@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48">
+    <!-- Same orange → coral → purple gradient and branch mark as the iOS icon. -->
+    <path android:pathData="M12,2h24a10,10 0,0 1,10 10v24a10,10 0,0 1,-10 10H12a10,10 0,0 1,-10 -10V12a10,10 0,0 1,10 -10">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="2" android:startY="2" android:endX="46" android:endY="46"
+                android:startColor="#FC6D26" android:centerColor="#E24329" android:endColor="#7B58CF" />
+        </aapt:attr>
+    </path>
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="3" android:strokeLineCap="round" android:fillColor="@android:color/transparent" android:pathData="M17,13v22M17,24c12,0 14,-4 14,-10" />
+    <path android:fillColor="#FFFFFF" android:pathData="M13,13a4,4 0,1 0,8 0a4,4 0,1 0,-8 0M13,35a4,4 0,1 0,8 0a4,4 0,1 0,-8 0M27,13a4,4 0,1 0,8 0a4,4 0,1 0,-8 0" />
+</vector>

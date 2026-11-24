@@ -1,0 +1,10 @@
+[
+  {
+    "id": 11,
+    "name": "App",
+    "path_with_namespace": "group/app",
+    "description": "Fixture project",
+    "default_branch": "main",
+    "web_url": "https://git.example.test/group/app"
+  }
+]

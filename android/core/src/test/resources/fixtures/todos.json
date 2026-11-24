@@ -1,0 +1,12 @@
+[
+  {"id": 102, "project": {"id": 11, "description": null, "name": "App", "name_with_namespace": "Group / App", "path": "app", "path_with_namespace": "group/app", "created_at": "2024-01-01T00:00:00.000Z"},
+   "author": {"id": 8, "username": "reviewer", "name": "Reviewer", "state": "active", "avatar_url": null, "web_url": "https://git.example.test/reviewer"},
+   "action_name": "review_requested", "target_type": "MergeRequest",
+   "target": {"id": 5042, "iid": 42, "project_id": 11, "title": "Rewrite Android UI", "state": "opened"},
+   "target_url": "https://git.example.test/group/app/-/merge_requests/42", "body": "Rewrite Android UI", "state": "pending", "created_at": "2026-10-28T09:00:00.000Z", "updated_at": "2026-10-28T09:00:00.000Z"},
+  {"id": 101, "project": {"id": 11, "name": "App", "path_with_namespace": "group/app"},
+   "author": {"id": 8, "username": "reviewer", "name": "Reviewer"},
+   "action_name": "build_failed", "target_type": "Commit",
+   "target": {"id": "0123456789abcdef0123456789abcdef01234567", "short_id": "01234567", "title": "Fix build"},
+   "target_url": "https://git.example.test/group/app/-/commit/01234567", "body": "Fix build", "state": "pending", "created_at": "2026-10-27T09:00:00.000Z"}
+]
