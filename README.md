@@ -4,6 +4,22 @@ gitlab.com 与自建 GitLab 的原生移动客户端。iOS 用 SwiftUI，在 iOS
 
 > 状态：iOS 0.2（M2）界面与功能已重写，经 CI 构建和截图测试；Android 仍是 M1 早期版本，重写在进行中。
 
+## 截图
+
+<p>
+  <img src="docs/screenshots/iphone-1-projects.png" width="220" alt="iPhone：项目列表">
+  <img src="docs/screenshots/iphone-2-mr-changes.png" width="220" alt="iPhone：合并请求变更与差异">
+  <img src="docs/screenshots/iphone-3-pipelines.png" width="220" alt="iPhone：流水线列表">
+</p>
+<p>
+  <img src="docs/screenshots/ipad-1-mr-changes.png" width="360" alt="iPad：合并请求变更与差异">
+  <img src="docs/screenshots/ipad-2-pipelines.png" width="360" alt="iPad：流水线列表">
+</p>
+
+项目列表与筛选、合并请求的逐文件差异、按状态筛选的流水线列表（iPhone 与 iPad）。
+
+App Store：[MyCodeio](https://apps.apple.com/app/id6827831053)
+
 ## iOS 功能
 
 | 领域 | 已实现 |
